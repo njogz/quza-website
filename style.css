@@ -267,6 +267,10 @@ input:-webkit-autofill:focus {
     transform: translateY(-5px)
 }
 
+.box:hover p, .box:hover h3 {
+    color: #515656;
+}
+
 .box h4 {
     text-transform: uppercase;
 }
@@ -979,5 +983,16 @@ preloader
         -webkit-transform: perspective(140px) rotateY(180deg);
         transform: perspective(140px) rotateY(180deg);
         opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .box {
+        min-height: 545px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .box {
+        min-height: 490px;
     }
 }
